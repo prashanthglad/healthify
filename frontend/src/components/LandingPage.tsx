@@ -1,26 +1,27 @@
 import { ArrowRight, Shield, Heart, Brain } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
+
 export default function LandingPage() {
   const navigate = useNavigate(); 
+
   return (
-    <div className="relative overflow-hidden pt-16">
+    <div className="relative overflow-hidden pt-16 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
-          Your Personal  Health & Fitness 
+          Your Personal Health & Fitness 
           <span className="text-purple-500"> Journey Starts Here</span>
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
           Professional guidance, personalized support, and tools to help you maintain and improve your health and fitness.
         </p>
         <div className="flex justify-center space-x-4">
-        <button
-      onClick={() => navigate("/prompt")} // Now navigate works correctly
-      className="bg-purple-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors flex items-center"
-    >
-      Ask Me
-      <ArrowRight className="ml-2 h-5 w-5" />
-    </button>
-        
+          <button
+            onClick={() => navigate("/prompt")} // Now navigate works correctly
+            className="bg-purple-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors flex items-center"
+          >
+            Ask Me
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </button>
         </div>
       </div>
 

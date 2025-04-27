@@ -24,12 +24,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
+    <nav className="fixed w-full bg-gray-950 backdrop-blur-sm border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div onClick={handleNav} className="flex items-center cursor-pointer">
             <HeartPulse className="h-8 w-8 text-purple-500" />
-            <span className="ml-2 text-xl font-semibold text-white">Healthify</span>
+            <span className="ml-2 text-xl font-semibold text-white">Health and Fitness</span>
           </div>
           
           {!isAuthenticated && (
